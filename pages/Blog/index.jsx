@@ -5,7 +5,6 @@ import Chip from '../../components/common/Chip';
 import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
 import { Link } from 'react-router-dom';
-import { Redirect, Route, Switch } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 const Blog =(props) => {
   const { id } = useParams();
@@ -16,13 +15,9 @@ const Blog =(props) => {
     if (blog) {
       setBlog(blog);
     }
-  }, []);
+  }, [id]);
   
-  const openPeopleWebsite = () => {
-    // Open people.com website in a new tab
-    window.open('https://people.com/why-marlee-matlin-will-always-advocate-for-the-deaf-community-exclusive-8600671', '_blank');
-};
-
+  
   return (
     < div className='PostContainer'> 
       <Link className='blog-goBack' to='/home'>

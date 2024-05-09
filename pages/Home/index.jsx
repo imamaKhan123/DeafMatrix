@@ -17,7 +17,7 @@ const Home = () => {
       fetch('https://deafmatrix.com/api/News/')
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          //console.log(data);
           setNews(data);
           // Cache the news data
           localStorage.setItem('cachedNews', JSON.stringify(data));
@@ -68,7 +68,7 @@ const Home = () => {
         />
 
         {/* Blog List & Empty View */}
-        {!news.length ? <div>Loading...</div> : <NewsList News={news} />}
+        {!news.length ? <EmptyList />: <NewsList News={news} />}
       </div>
 
       <div className='bottom-nav d-flex justify-content-center'>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Chip from '../../../common/Chip';
 import './styles.css';
 
@@ -20,7 +19,6 @@ const EventItem = ({
    
     window.open(link, '_blank');
 };
-console.log(link);
   return (
 
 

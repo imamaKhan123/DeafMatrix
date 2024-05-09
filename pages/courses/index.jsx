@@ -6,7 +6,6 @@ import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-import { Redirect, Route, Switch } from 'react-router-dom';
 const Course = () => {
  
   const { id } = useParams();
@@ -18,7 +17,7 @@ const Course = () => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
+      //  console.log(data);
         blogList=data;
       });
     let blog = blogList.find((blog) => blog.id === parseInt(id));
@@ -29,7 +28,7 @@ const Course = () => {
 
   return (
     < div className='PostContainer'>
-      <Link className='blog-goBack' to='/courses' Tabvalue = "courses" >
+      <Link className='blog-goBack' to='/courses'  >
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
       {blog ? (

@@ -53,8 +53,7 @@ function Discover() {
 
   const heading1 = "Discover";
   const heading2 = "What's Up In The Deaf World?";
-  const paragraph = "An awesome place to make oneself productive and entertained through daily updates.";
-
+ 
   return (
     <div className='container-box'>
       {/* Page Header */}

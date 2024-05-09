@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Chip from '../../../common/Chip';
 import './styles.css';
 const BlogItem = ({
@@ -13,11 +13,10 @@ const BlogItem = ({
     username
   },
 }) => {
-  const history = useHistory();
- const [isEmbeddable, setIsEmbeddable]= useState(true); // Assuming it's embeddable by default
-  text=text.replace('&quot;', '\"');
-  text=text.replace('&quot;', '\"');
 
+ const [isEmbeddable, setIsEmbeddable]= useState(true); // Assuming it's embeddable by default
+ text = text.replace(/&quot;/g, '"');
+ text = text.replace(/&rsquo;/g, '\'');
 useEffect(() => {
   fetch(link)
     .then(response => {
@@ -30,8 +29,7 @@ useEffect(() => {
     })
     .catch(error => {
       setIsEmbeddable(false);
-      console.log(link);
-     // console.error('Error checking embedding:', error);
+  
     });
 }, [link]); // Run effect only when link changes
 

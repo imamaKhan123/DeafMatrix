@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router';
-import { blogList } from '../../config/data';
 import Chip from '../../components/common/Chip';
-import EmptyList from '../../components/common/EmptyList';
+//import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
-import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import { useHistory } from 'react-router-dom';
 const DisplayVideo =(props) => {

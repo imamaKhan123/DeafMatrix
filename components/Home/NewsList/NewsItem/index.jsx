@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Chip from '../../../common/Chip';
 
 
@@ -14,7 +14,6 @@ const NewsItem = ({
     link
   },
 }) => {
-  const history = useHistory();
   const [isEmbeddable, setIsEmbeddable]= useState(true) // Assuming it's embeddable by default
  useEffect(() => {
    fetch(link)
