@@ -1,0 +1,19 @@
+.courseList-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .courseList-wrap {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .courseList-wrap {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

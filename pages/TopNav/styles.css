@@ -1,0 +1,12 @@
+.sticky-top{
+ position: fixed;
+ width: 100%;
+
+}
+.sticky-top ::after{
+    content: "";
+margin-bottom: 20px;
+}
+.bg-body-tertiary {
+    color: white;
+}
