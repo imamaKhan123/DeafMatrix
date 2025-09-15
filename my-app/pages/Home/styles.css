@@ -1,0 +1,23 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .container-box {
+    flex: 1 1 auto; /* grow to fill space above bottom nav */
+    overflow-y: auto; /* enable vertical scroll */
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  .bottom-nav {
+    flex-shrink: 0; /* keeps nav at bottom */
+  }
+  

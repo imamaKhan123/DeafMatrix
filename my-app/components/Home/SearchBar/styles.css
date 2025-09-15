@@ -1,0 +1,68 @@
+/* Container for search bar */
+.searchBar-wrap {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form styling */
+.searchBar-wrap form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Limit width */
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.searchBar-wrap form:focus-within {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Input field */
+.searchBar-wrap input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  color: #333;
+}
+
+/* Placeholder color */
+.searchBar-wrap input::placeholder {
+  color: #aaa;
+}
+
+/* Submit button */
+.searchBar-wrap button {
+  background-color: #080808;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.searchBar-wrap button:hover {
+  background-color: #080808;
+}
+
+/* Clear button (if you have one) */
+.searchBar-wrap .clear-btn {
+  background-color: #f1f1f1;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+.searchBar-wrap .clear-btn:hover {
+  background-color: #e1e1e1;
+}

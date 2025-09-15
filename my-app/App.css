@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+.navbar{
+  background: linear-gradient(45deg, #e0d3d1, #423e3b, #bfa16c);
+  color: white !important;
+  position: fixed;
+    width: 100%;
+ 
+}
+.nav-link{
+  color: black;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  width: 95%;
+  margin: 0 auto;
+}
+.blogItem-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.container-box{
+  /* margin-bottom: 6rem; */
+  padding-top: 4rem ;
+}
+.fixed-bottom {
+  background: linear-gradient(45deg, #e0d3d1, #423e3b, #bfa16c);
+position: fixed;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1030;
+}
+/* Custom CSS to align tabs at the bottom 
+.react-bootstrap-tabs-bottom .nav-tabs {
+  border-bottom: none;
+}*/
+.nav-tabs .nav-link.active{
+  background-color: inherit;
+  border-top: none;
+    border-right: none;
+    border-left: none;
+  border-bottom: 3px solid white;
+  color: white;
+}
+.nav-tabs .nav-link .hover{
+color:inherit;
+}
+.react-bootstrap-tabs-bottom .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.bottom-nav{
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(45deg, #e0d3d1, #423e3b, #bfa16c);;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+}
+.active{
+  color: white !important;
+  border-color: white !important;
+}
+.react-bootstrap-tabs-bottom .tab-content {
+  margin-top: 10px; /* Add spacing between content and tabs */
+}
+@media (max-width: 360px) {
+  .fixed-bottom {
+    width: max-content;
+  
+  }}
+  @media (max-width: 400px) {
+    .bottom-nav{
+  
+      padding: 0.2rem !important;
+    }
+  }
+  @media (min-width: 971px) {
+    .bottom-nav {
+      display: none !important;
+    }
+  }
+  html, body, #root {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+  
